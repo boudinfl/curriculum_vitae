@@ -1,0 +1,172 @@
+## -*- coding: utf-8 -*-
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[green]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1cm]{geometry}
+\usepackage{textcomp} % pour 1/2 ater
+\usepackage{enumitem}
+
+\firstname{Florian}
+\familyname{Boudin}
+\address{Laboratoire LINA, Université de Nantes}{2 rue de la Houssinière, 44322 Nantes, France}
+\phone[fixed]{+33~2~51~12~59~98}
+\email{florian.boudin@univ-nantes.fr}
+\homepage{http://www.florianboudin.org}
+\photo[64pt][0.4pt]{picture} 
+\quote{Mis à jour - last update: ${date}} 
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\setlength{\hintscolumnwidth}{2.2cm}
+
+%%------------------------------------------------------------------------------
+\section{Formation - \textit{Education}}
+%%------------------------------------------------------------------------------
+
+\cventry{2006-2008}
+        {Doctorat en Informatique}
+        {\textit{Ph.D. in Computer Science}}
+        {}{}
+        {Université d'Avignon et des Pays de Vaucluse, France \newline
+        Mention très honorable, directeurs~: 
+        Juan-Manuel Torres-Moreno et Marc El-Bèze}
+
+\cventry{2004-2006}
+        {Master Recherche Informatique}
+        {\textit{M.S. in Computer Science}}
+        {}{}
+        {Université d'Avignon et des Pays de Vaucluse, France}
+
+\cventry{2000-2004}
+        {Licence Génie Mathématique et Informatique}
+        {B.S. in Mathematics and Computer Science}
+        {}{}
+        {University of Birmingham, Royaume Uni (ERASMUS)} 
+
+%%------------------------------------------------------------------------------
+\section{Parcours professionnel - \textit{Employment history}}
+%%------------------------------------------------------------------------------
+
+\cventry{2011-Présent}
+        {Maître de conférences}
+        {\textit{Associate professor}}
+        {}{}
+        {Université de Nantes, France}
+
+\cventry{2010-2011}
+        {\textonehalf~ATER}
+        {\textit{Assistant professor}}
+        {}{}
+        {Université d'Avignon et des Pays de Vaucluse, France}
+
+\cventry{2009-2010}
+        {Stagiaire post-doctoral}
+        {\textit{Postdoctoral fellow}}
+        {}{}
+        {Université de Montréal, Canada}
+
+\cventry{2006-2009}
+        {Assistant de recherche}
+        {\textit{Research assistant}}
+        {}{}
+        {Université d'Avignon et des Pays de Vaucluse, France}   
+
+%%------------------------------------------------------------------------------
+\section{Intérêts de recherche - \textit{Research interests}}
+%%------------------------------------------------------------------------------
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=-0.1cm]
+    \item Résumé automatique, \textit{Summarization}
+    \item Extraction de termes-clés, \textit{Keyphrase extraction}
+    \item Recherche d'information, \textit{Information retrieval}
+\end{itemize}
+
+%%------------------------------------------------------------------------------
+\section{Compétences - \textit{Skills}}
+%%------------------------------------------------------------------------------
+
+\setlength{\hintscolumnwidth}{2.4cm}
+
+\cvitem{Programmation}
+       {Python, C, Java, HTML/CSS, PHP, SQL, \LaTeX}
+
+\vspace*{0.5em}
+
+\cvitem{Langues}
+       {Français (natif), Anglais (bon), Japonais (notions)}
+
+\cvitem{\textit{Languages}}
+       {French (native speaker), English (good -- gap year in UK 2003-2004), 
+       Japanese (notions)}
+
+\setlength{\hintscolumnwidth}{2.2cm}
+
+%%------------------------------------------------------------------------------
+\section{Enseignement - \textit{Teaching experience}}
+%%------------------------------------------------------------------------------
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=-0.2cm]
+    \item Université de Nantes, France \hfill 372h
+    \vspace*{-0.3cm}
+    \begin{itemize}
+        \item Programmation, bases de données, apprentissage automatique, 
+              technologies web
+    \end{itemize}
+    \item Université d'Avignon et des Pays de Vaucluse, France \hfill 96h
+    \vspace*{-0.3cm}
+    \begin{itemize}
+        \item Programmation, informatique décisionnelle 
+    \end{itemize}
+    \item Université de Montréal, Canada \hfill 54h
+    \vspace*{-0.3cm}
+    \begin{itemize}
+        \item Atelier en informatique
+    \end{itemize}
+    \item IUT d'Avignon, France \hfill 100h
+    \vspace*{-0.3cm}
+    \begin{itemize}
+        \item Programmation, programmation web, bases de données
+    \end{itemize}
+\end{itemize}
+
+%%------------------------------------------------------------------------------
+\section{Encadrement - \textit{Students}}
+%%------------------------------------------------------------------------------
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=-0.1cm]
+    \item Adrien Bougouin (Ph.D. student), Indexation automatique en domaine de 
+          spécialité (automatic indexing in specialized domain), 2012-2015.
+\end{itemize}
+
+%%------------------------------------------------------------------------------
+\section{Service – \textit{Service}}
+%%------------------------------------------------------------------------------
+
+\begin{itemize}[leftmargin=0.5cm,itemsep=-0.1cm]
+    \item Conference Program Chair~: RECITAL 2013
+    \item Conference PCs~: COLING 2012, LACL 2012, RECITAL 2010
+    \item onference Reviews: TALN 2013, JAD'12, KDIR (2012, 2011, 2010, 2009), RECITAL 2011, CIKM 2011
+    \item Journal Reviews: TAL
+\end{itemize}
+
+%%------------------------------------------------------------------------------
+\section{Publications - \textit{Publications}}
+%%------------------------------------------------------------------------------
+
+\setlength{\hintscolumnwidth}{0cm}
+
+% for category in tri:
+    \subsection{${category}}
+    \begin{itemize}[leftmargin=1.2cm,itemsep=0.1cm]
+        % for article in articles[category]:
+        \item[{\small$[$${article['counter']}$]$}] \textbf{${', '.join(article['auteurs'])}}, ${article['titre']}, \textit{${article['desc']}}.
+        % endfor
+    \end{itemize}
+% endfor
+
+\end{document}
