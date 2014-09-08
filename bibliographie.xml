@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <articles>
+
 	<!-- Articles de journaux -->
+
+	<article id="bougouin-boudin:2014:TAL" type="journal">
+		<auteurs>
+			<auteur>Adrien Bougouin</auteur>
+			<auteur>Florian Boudin</auteur>
+		</auteurs>
+		<titre>TopicRank : ordonnancement de sujets pour l’extraction automatique de termes-clés</titre>
+		<desc>Traitement Automatique des Langues</desc>
+		<abbr>TAL 55-1</abbr>
+		<annee>2014</annee>
+		<topic>nlp</topic>
+	</article>
+
+	<article id="deveaud-boudin:2014:I3" type="journal">
+		<auteurs>
+			<auteur>Romain Deveaud</auteur>
+			<auteur>Florian Boudin</auteur>
+		</auteurs>
+		<titre>De quoi parle ce Tweet? Résumer Wikipédia pour contextualiser des microblogs</titre>
+		<desc>The Information - Intelligence - Interaction (I3) Journal</desc>
+		<annee>2014</annee>
+		<topic>ir</topic>
+	</article>
+
 	<article id="boudin-nie-barlett-grad-pluye-dawes:2010:BMC" type="journal">
 		<auteurs>
 			<auteur>Florian Boudin</auteur>
@@ -21,6 +46,24 @@
 
 	<!-- Articles de conférences internationales -->
 
+	<article id="lacroix-bechet-boudin:2014:CICLING" type="intConf">
+		<auteurs>
+			<auteur>Ophélie Lacroix</auteur>
+			<auteur>Denis Béchet</auteur>
+			<auteur>Florian Boudin</auteur>
+		</auteurs>
+		<titre>Label Pre-annotation for Building Non-projective Dependency Treebanks for French</titre>
+		<desc>Conference on Intelligent Text Processing and Computational Linguistics</desc>
+		<abbr>CICLing</abbr>
+		<annee>2014</annee>
+		<lieu>Kathmandu (Nepal)</lieu>
+		<topic>nlp</topic>
+		<bib>http://www.florianboudin.org/downloads/publications/lacroix_cicling14.bib</bib>
+		<paper>http://www.florianboudin.org/downloads/publications/lacroix_cicling14.pdf</paper>
+		<hal>http://hal.archives-ouvertes.fr/hal-01004007</hal>
+		<tauxAcceptation>28.3%</tauxAcceptation>
+	</article>
+
 	<article id="bougouin-boudin-daille:2013:IJCNLP" type="intConf">
 		<auteurs>
 			<auteur>Adrien Bougouin</auteur>
@@ -33,6 +76,7 @@
 		<annee>2013</annee>
 		<lieu>Nagoya (Japan)</lieu>
 		<topic>nlp</topic>
+		<hal>http://hal.archives-ouvertes.fr/hal-00917969</hal>
 		<url>http://aclweb.org/anthology/I/I13/I13-1062.pdf</url>
 		<bib>http://aclweb.org/anthology/I/I13/I13-1062.bib</bib>
 		<dataset>https://github.com/adrien-bougouin/WikinewsKeyphraseCorpus</dataset>
@@ -58,7 +102,6 @@
 		<software>https://github.com/boudinfl/centrality_measures_ijcnlp13</software>
 		<tauxAcceptation>38%</tauxAcceptation>
 	</article>
-
 
 	<article id="boudin-morin:2013:NAACL" type="intConf">
 		<auteurs>
@@ -257,6 +300,23 @@
 
 		
 	<!-- Articles de conférences nationales -->
+	<article id="bougouin-boudin-daille:2014:TALN" type="natConf">
+		<auteurs>
+			<auteur>Adrien Bougouin</auteur>
+			<auteur>Florian Boudin</auteur>
+			<auteur>Béatrice Daille</auteur>
+		</auteurs>
+		<titre>Influence des domaines de spécialité dans l’extraction de termes-clés</titre>
+		<desc>Traitement Automatique des Langues Naturelles</desc>
+		<abbr>TALN</abbr>
+		<annee>2014</annee>
+		<lieu>Marseille (France)</lieu>
+		<topic>nlp</topic>
+		<hal>http://hal.archives-ouvertes.fr/hal-01021452</hal>
+		<url>http://www.atala.org/taln_archives/TALN/TALN-2014/taln-2014-long-002.pdf</url>
+		<bib>http://www.atala.org/taln_archives/TALN/TALN-2014/taln-2014-long-002.bib</bib>
+	</article>
+
 	<article id="boudin:2013:TALN" type="natConf">
 		<auteurs>
 			<auteur>Florian Boudin</auteur>
@@ -267,8 +327,8 @@
 		<annee>2013</annee>
 		<lieu>Sables d'Olonne (France)</lieu>
 		<topic>nlp</topic>
-		<url>http://www.taln2013.org/actes/www/TALN-2013/actes/taln-2013-court-001.pdf</url>
-		<bib>http://www.taln2013.org/actes/www/TALN-2013/bibtex/taln-2013-court-001.bib</bib>
+		<url>http://aclweb.org/anthology/F/F13/F13-2001.pdf</url>
+		<bib>http://aclweb.org/anthology/F/F13/F13-2001.bib</bib>
 		<hal>http://hal.archives-ouvertes.fr/hal-00819813</hal>
 		<dataset>https://github.com/boudinfl/taln-archives</dataset>
 		<longueur>papier court</longueur>
@@ -279,13 +339,13 @@
 			<auteur>Nicolas Hernandez</auteur>
 			<auteur>Florian Boudin</auteur>
 		</auteurs>
-		<titre>Construction automatique d'un large corpus libre annoté morpho-syntaxiquement en français</titre>
+		<titre>Construction d'un large corpus libre annoté morpho-syntaxiquement en français</titre>
 		<desc>Traitement Automatique des Langues Naturelles</desc>
 		<abbr>TALN</abbr>
 		<annee>2013</annee>
 		<lieu>Sables d'Olonne (France)</lieu>
-		<url>http://www.taln2013.org/actes/www/TALN-2013/actes/taln-2013-long-012.pdf</url>
-		<bib>http://www.taln2013.org/actes/www/TALN-2013/bibtex/taln-2013-long-012.bib</bib>
+		<url>http://aclweb.org/anthology/F/F13/F13-1012.pdf</url>
+		<bib>http://aclweb.org/anthology/F/F13/F13-1012.bib</bib>
 		<hal>http://hal.archives-ouvertes.fr/hal-00816350</hal>
 		<topic>nlp</topic>
 	</article>
@@ -332,8 +392,8 @@
 		<desc>Traitement Automatique des Langues Naturelles</desc>
 		<abbr>TALN</abbr>
 		<annee>2011</annee>
-		<url>http://www.lirmm.fr/~lopez/TALN2011/Longs-TALN+RECITAL/Huet_taln11_submission_12.pdf</url>
-		<bib>http://www.florianboudin.org/downloads/publications/huet_taln11.bib</bib>
+		<url>http://www.atala.org/taln_archives/TALN/TALN-2011/taln-2011-long-005.pdf</url>
+		<bib>http://www.atala.org/taln_archives/TALN/TALN-2011/taln-2011-long-005.bib</bib>
 		<lieu>Montpellier (France)</lieu>
 		<topic>nlp</topic>
 	</article>
@@ -365,8 +425,8 @@
 		<abbr>TALN</abbr>
 		<annee>2009</annee>
 		<lieu>Senlis (France)</lieu>
-		<url>http://www.florianboudin.org/downloads/publications/boudin_taln09.pdf</url>
-		<bib>http://www.florianboudin.org/downloads/publications/boudin_taln09.bib</bib>
+		<url>http://www.atala.org/taln_archives/TALN/TALN-2009/taln-2009-court-035.pdf</url>
+		<bib>http://www.atala.org/taln_archives/TALN/TALN-2009/taln-2009-court-035.bib</bib>
 		<topic>nlp</topic>
 		<longueur>papier court</longueur>
 	</article>
@@ -383,7 +443,7 @@
 		<abbr>INEX</abbr>
 		<annee>2013</annee>
 		<url>http://www.clef-initiative.eu/documents/71612/f20ff540-8fc7-476a-9c51-db20f8413cc6</url>
-		<!-- <hal>http://hal.archives-ouvertes.fr/hal-00755496</hal> -->
+		<hal>http://hal.archives-ouvertes.fr/hal-00917956</hal>
 		<bib>http://www.florianboudin.org/downloads/publications/deveaud_inex13.bib</bib>
 		<lieu>Valence (Spain)</lieu>
 		<topic>ir</topic>

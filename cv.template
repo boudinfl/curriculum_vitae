@@ -2,7 +2,7 @@
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[green]{classic}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=1cm]{geometry}
+\usepackage[top=1cm, bottom=1.5cm, left=1cm, right=1cm]{geometry}
 \usepackage{textcomp} % pour 1/2 ater
 \usepackage{enumitem}
 
@@ -111,7 +111,7 @@
 %%------------------------------------------------------------------------------
 
 \begin{itemize}[leftmargin=0.5cm,itemsep=-0.2cm]
-    \item Université de Nantes, France \hfill 372h
+    \item Université de Nantes, France \hfill 600h+ %372h
     \vspace*{-0.3cm}
     \begin{itemize}
         \item Programmation, bases de données, apprentissage automatique, 
@@ -141,6 +141,9 @@
 \begin{itemize}[leftmargin=0.5cm,itemsep=-0.1cm]
     \item Adrien Bougouin (Ph.D. student), Indexation automatique en domaine de 
           spécialité (automatic indexing in specialized domain), 2012-2015.
+    \item Rémi Bois (M.Sc. student), Fusion de phrases et résumé automatique~: 
+          une problématique d’inférence globale ? (sentence fusion and text 
+          summarization: a global inference problem?), 2014-2014.
 \end{itemize}
 
 %%------------------------------------------------------------------------------
@@ -149,8 +152,8 @@
 
 \begin{itemize}[leftmargin=0.5cm,itemsep=-0.1cm]
     \item Conference Program Chair~: RECITAL 2013
-    \item Conference PCs~: COLING 2012, LACL 2012, RECITAL 2010
-    \item onference Reviews: TALN 2013, JAD'12, KDIR (2012, 2011, 2010, 2009), RECITAL 2011, CIKM 2011
+    \item Conference PCs~: COLING 2012, LACL 2012, RECITAL (2010, 2014), TALN 2014
+    \item Conference Reviews: TALN 2013, JAD'12, KDIR (2012, 2011, 2010, 2009), RECITAL 2011, CIKM 2011
     \item Journal Reviews: TAL
 \end{itemize}
 
