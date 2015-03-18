@@ -76,7 +76,7 @@ class bibliographieHandler(xml.sax.ContentHandler):
 
         self.buffer = ''
 
-input_file = "bibliographie.xml"
+input_file = "../bibliography/bibliography.xml"
 cv_file = "cv_florian_boudin.tex"
 
 try:
