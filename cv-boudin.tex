@@ -1,0 +1,207 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[%showframe,
+            left=1cm,
+            top=1cm,
+            bottom=2cm,
+            right=1cm]{geometry}
+\usepackage[compact]{titlesec}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{eurosym}
+\usepackage{stmaryrd}
+\usepackage{palatino}
+
+\usepackage[style=numeric,
+            natbib=true,
+            hyperref=true,
+            url=false,
+            isbn=false,
+            doi=false,
+            defernumbers=true,
+            backend=biber,
+            maxbibnames=99,
+            sorting=none]{biblatex}
+            
+\bibliography{bibliography.bib}
+
+% Comma before and colon after journal volume
+\renewbibmacro*{volume+number+eid}{
+  \setunit*{\addcomma\space}
+  \printfield{volume}
+  \setunit*{\addcolon}
+  \printfield{number}
+  \setunit{\addcomma\space}
+  \printfield{eid}}
+
+% remove parenthesis for year in article
+\renewbibmacro*{issue+date}{
+  \setunit{\adddot\space}
+    \iffieldundef{issue}
+      {\usebibmacro{date}}
+      {\printfield{issue}
+       \setunit*{\addspace}
+       \usebibmacro{date}}
+  \newunit}
+  
+% remove the " from the title field
+\DeclareFieldFormat
+    [article,inbook,incollection,inproceedings,thesis,unpublished]
+    {title}{#1\isdot}
+
+% remove the in before the journal/booktitle
+\renewbibmacro{in:}{}
+
+% remove the address, month, pages and publisher fields
+\AtEveryBibitem{%
+  \clearlist{location} 
+  \clearfield{month}
+  \clearfield{pages}
+  \clearlist{publisher}
+  \clearlist{editor}
+}
+
+\setlength\parindent{0pt}
+
+% fix hyphenation issues
+\lccode`\'=39\hyphenation{l'ex-tract-ion}
+
+\begin{document}
+
+\section*{Florian Boudin}
+
+Last update: \today
+
+\hrulefill
+
+\begin{itemize}
+[labelindent=!,
+labelsep*=.5cm,
+leftmargin=3.1cm,
+itemsep=0.3cm,
+align=left,
+style=multiline,
+font=\normalfont\scshape]
+
+\item[Contact Information]
+LINA - Université de Nantes  \hfill +33 2 51 12 59 98 \newline
+2 rue de la Houssinière \hfill \url{florian.boudin@univ-nantes.fr} \newline
+44322 Nantes, France \hfill \url{http://florianboudin.org}
+
+\item[Employment History]
+\textbf{Associate Professor} \hfill 2011 to present \newline
+Université de Nantes, France \\[-.5cm]
+
+\textbf{Assistant Professor} \hfill 2010-2011 \newline
+Université d'Avignon et des Pays de Vaucluse, France \\[-.5cm]
+
+\textbf{Postdoctoral Fellow} \hfill 2009-2010 \newline
+Université de Montréal, Canada \\[-.5cm]
+                                       
+\textbf{Research Assistant} \hfill 2006-2009 \newline
+Université d'Avignon et des Pays de Vaucluse, France
+
+\item[Education]
+\textbf{Ph.D. in Computer Science} \hfill 2006-2008 \newline 
+Université d'Avignon et des Pays de Vaucluse, France \newline
+Advisors: 
+\href{http://lia.univ-avignon.fr/chercheurs/torres/}{Juan-Manuel Torres-Moreno},
+\href{http://lia.univ-avignon.fr/user/48}{Marc El-Bèze} \\[-.5cm]
+
+\textbf{M.S. in Computer Science} \hfill 2004-2006 \newline 
+Université d'Avignon et des Pays de Vaucluse, France \\[-.5cm]
+                    
+\textbf{B.S. in Mathematics and Computer Science} \hfill 2000-2004 \newline
+Université d'Avignon et des Pays de Vaucluse, France \newline
+University of Birmingham, UK (ERASMUS Programme)
+
+\item[Students]
+\textbf{Ph.D. Students}
+\begin{itemize}[nosep,topsep=-0.2cm,leftmargin=!,labelsep*=.3cm,label=$\Yright$]
+\item \href{http://adrien-bougouin.github.io/}{Adrien Bougouin} 
+      (expected graduation $\sim$ 2015) 
+\end{itemize}~\\[-.2cm]
+%
+\textbf{M.S. Students}
+\begin{itemize}[nosep,topsep=-0.2cm,leftmargin=!,labelsep*=.3cm,label=$\Yright$]
+\item Rémi Bois (2014; now Ph.D. student at Université de Rennes) 
+\end{itemize}
+
+\item[Publications]
+
+\nocite{*}
+
+\textbf{Journal Papers}
+\printbibliography[heading=none,type=article]
+
+\textbf{Conference Papers}
+\printbibliography[heading=none,type=inproceedings,keyword=intConf]
+
+\textbf{Workshop Papers}
+\printbibliography[heading=none,type=inproceedings,keyword=workshop]
+
+\textbf{National Conference Papers}
+\printbibliography[heading=none,type=inproceedings,keyword=natConf]
+
+\textbf{Book Chapters}
+\printbibliography[heading=none,type=inbook]
+
+\textbf{Ph.D. Thesis}
+\printbibliography[heading=none,type=thesis]
+
+\item[Funding]
+\href{http://boudinfl.github.io/GOLEM/}{\textbf{GOLEM - Approche par Optimisation
+pour l'Extraction de Mots-clés}} \hfill 2015 \newline
+CNRS - PEPS INS2I/INSMI 2015, 6$k$\euro{} over one year. Sole PI.
+
+\item[Service]
+\begin{itemize}[
+font=\normalfont\bfseries,
+itemsep=.1cm,
+wide=0cm,
+labelsep*=.1cm]
+
+\item[Conference Program Chair:]
+    RECITAL 2013
+\item[Conference PCs:]
+    LACL 2012,
+    RECITAL (2010, 2014, 2015)
+\item[Conference Reviews:]
+    AAAI 2015,
+    TALN (2013, 2014, 2015),
+    JAD'12
+    COLING 2012,
+    KDIR (2009, 2010, 2011, 2012),
+    CIKM 2011, 
+    RECITAL 2011
+\item[Workshop Reviews:]
+    BUCC 2015
+\item[Journal Reviews:] 
+    Traitement Automatique des Langues, 
+    Information Retrieval, 
+    Information Processing \& Management, 
+    Journal of Cheminformatics,
+    Language Resources and Evaluation
+\end{itemize}
+
+
+\item[Teaching]
+\textbf{Université de Nantes, France} \hfill 800h+ \newline
+Programming, Databases, Machine Learning \\[-.5cm]
+                    
+\textbf{Université d'Avignon et des Pays de Vaucluse, France} \hfill 96h \newline
+Programming, Business Intelligence \\[-.5cm]
+                    
+\textbf{Université de Montréal, Canada} \hfill 54h \newline
+Atelier en Informatique \\[-.5cm]
+                
+\textbf{IUT d'Avignon, France} \hfill 100h \newline
+Programming, Databases \\[-.5cm]
+
+\end{itemize}
+
+
+
+\end{document}
