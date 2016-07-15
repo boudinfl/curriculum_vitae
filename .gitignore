@@ -9,3 +9,7 @@
 *.log
 
 *.gz
+
+*.bbl
+
+*.xml
